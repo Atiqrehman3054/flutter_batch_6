@@ -11,7 +11,11 @@ class FirstDay extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        body: Center(child: Text(_firstdata)),
+        body: Center(
+            child: Text(
+          _firstdata,
+          style: TextStyle(fontSize: 10),
+        )),
       ),
     );
   }

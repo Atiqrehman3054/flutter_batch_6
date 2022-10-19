@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ui_batch_6/HelpingFile/const.dart';
 
 Color black_color = Colors.black;
 
@@ -20,9 +21,6 @@ class SecondDay extends StatelessWidget {
   IconData icondata = Icons.search;
   IconData icondata2 = Icons.phone;
   IconData icondata3 = Icons.contact_mail;
-  SizedBox fixsize12 = const SizedBox(
-    width: 12.0,
-  );
 
   Function() floationbuttonfun = () {
     List all = [1, 2, 3, 4, 5, 6];
@@ -49,17 +47,16 @@ class SecondDay extends StatelessWidget {
             icondata,
             color: black_color,
           ),
-          fixsize12,
+          fixsizewidth12,
           Icon(
             icondata2,
             color: black_color,
           ),
-          fixsize12,
+          fixsizewidth12,
           Icon(
             icondata3,
             color: black_color,
           ),
-          fixsize12
         ],
         // bottom: ,
       ),
