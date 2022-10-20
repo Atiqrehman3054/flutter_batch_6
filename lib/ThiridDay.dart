@@ -58,14 +58,7 @@ class ThridScreen extends StatelessWidget {
           Container(
               height: height / 6,
               width: width / 3.8,
-              decoration: BoxDecoration(
-                color: Colors.blueAccent,
-                border: Border.all(
-                  width: 3.0,
-                  color: Colors.black,
-                ),
-                borderRadius: BorderRadius.circular(15.0),
-              ),
+              decoration: CusstomDecoration(),
               child: Image.asset(
                 imagename,
                 fit: BoxFit.cover,
@@ -80,4 +73,18 @@ class ThridScreen extends StatelessWidget {
       ),
     );
   }
+
+ 
 }
+
+BoxDecoration CusstomDecoration() {
+  return BoxDecoration(
+    color: Colors.blueAccent,
+    border: Border.all(
+      width: 3.0,
+      color: Colors.black,
+    ),
+    borderRadius: BorderRadius.circular(15.0),
+  );
+}
+
