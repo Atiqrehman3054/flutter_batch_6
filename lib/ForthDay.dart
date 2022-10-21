@@ -8,23 +8,27 @@ import 'package:flutter_ui_batch_6/ThiridDay.dart';
 //expended
 //flex
 
+
+String network_image =
+    "https://img.freepik.com/free-photo/half-profile-image-beautiful-young-woman-with-bob-hairdo-posing-gazing-with-eyes-full-reproach-suspicion-human-facial-expressions-emotions-reaction-feelings_343059-4660.jpg?w=2000";
+
+Container customcontainer() {
+  return Container(
+    height: 100,
+    width: 100,
+    decoration: CusstomDecoration(),
+    child: Image.network(
+      network_image,
+      fit: BoxFit.fill,
+    ),
+  );
+}
+
 class ForthScreen extends StatelessWidget {
   ForthScreen({super.key});
 
-  String network_image =
-      "https://img.freepik.com/free-photo/half-profile-image-beautiful-young-woman-with-bob-hairdo-posing-gazing-with-eyes-full-reproach-suspicion-human-facial-expressions-emotions-reaction-feelings_343059-4660.jpg?w=2000";
+  
 
-  Container customcontainer() {
-    return Container(
-      height: 100,
-      width: 100,
-      decoration: CusstomDecoration(),
-      child: Image.network(
-        network_image,
-        fit: BoxFit.fill,
-      ),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
