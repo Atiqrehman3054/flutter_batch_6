@@ -12,6 +12,19 @@ class _SeventhScreenState extends State<SeventhScreen> {
   int Count = 0;
   bool single = true;
 
+  List<String> all_student = [
+    "student_no_1",
+    "student_no_2",
+    "student_no_3",
+    "student_no_4",
+    "student_no_5",
+    "student_no_6",
+    "student_no_7",
+    "student_no_8",
+    "student_no_9",
+    "student_no_10",
+  ];
+
   // Function() increment = () {
   @override
   Widget build(BuildContext context) {
@@ -24,6 +37,12 @@ class _SeventhScreenState extends State<SeventhScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            fixsizeheight12,
+            Text(
+              "Student_name \n ${all_student[Count]}",
+              style: TextStyle(fontSize: 30),
+            ),
+            fixsizeheight12,
             Align(
               alignment: Alignment.center,
               child: Text(
@@ -60,8 +79,8 @@ class _SeventhScreenState extends State<SeventhScreen> {
             ElevatedButton(
                 onPressed: () {
                   setState(() {
-                    // Count++;
-                    single = false;
+                    Count++;
+                    // single = false;
                   });
 
                   print("print the count value $Count");

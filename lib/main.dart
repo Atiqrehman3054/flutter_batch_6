@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ui_batch_6/ForthDay.dart';
 import 'package:flutter_ui_batch_6/HelpingFile/sixth.dart';
 import 'package:flutter_ui_batch_6/ThiridDay.dart';
+import 'package:flutter_ui_batch_6/eighth.dart';
 import 'package:flutter_ui_batch_6/fifthday.dart';
+import 'package:flutter_ui_batch_6/ninthScreen.dart';
 import 'package:flutter_ui_batch_6/secondday.dart';
 import 'package:flutter_ui_batch_6/seventh.dart';
 
@@ -22,7 +24,8 @@ class FirstClass extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SeventhScreen(),
+      home: NinthScreen(),
+      // EightScreen(),
       //  SixthScreen(),
       // theme: ,
       // ForthScreen(),
