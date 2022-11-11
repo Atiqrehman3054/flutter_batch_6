@@ -77,11 +77,18 @@ class _SeventhScreenState extends State<SeventhScreen> {
             fixsizeheight12,
             fixsizeheight12,
             ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.amber,
+                ),
                 onPressed: () {
-                  setState(() {
-                    Count++;
-                    // single = false;
-                  });
+                  // if (Count < 10) {
+                  //   print("list ended");
+                  // } else {
+                  //   setState(() {
+                  //     Count++;
+                  //     // single = false;
+                  //   });
+                  // }
 
                   print("print the count value $Count");
                 },
