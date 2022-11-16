@@ -44,6 +44,8 @@ class TwelethScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(15)),
                       height: 300,
                       width: 300,
+
+                      // child: ,
                     ),
                   ),
                   Align(

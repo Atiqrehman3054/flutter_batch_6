@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ui_batch_6/HelpingFile/const.dart';
+import 'package:flutter_ui_batch_6/eighth.dart';
+
+import 'eleventh.dart';
 
 Color black_color = Colors.black;
 
@@ -31,12 +34,29 @@ class SecondDay extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
         child: Scaffold(
+      body: Column(children: [
+        MaterialButton(
+          onPressed: () {
+            Navigator.pushReplacement(context,
+                MaterialPageRoute(builder: (context) => const EightScreen()));
+          },
+          child: Text(
+            "2nd button",
+            style: custom,
+          ),
+        ),
+      ]),
       appBar: AppBar(
         backgroundColor: pagecustomcolor,
-        leading: Icon(
-          Icons.add,
-          color: black_color,
-          size: 40.0,
+        leading: InkWell(
+          onTap: () {
+            Navigator.pop(context);
+          },
+          child: Icon(
+            Icons.arrow_back_ios_new,
+            color: black_color,
+            size: 40.0,
+          ),
         ),
         centerTitle: true,
         title: Text(appBar_data,
