@@ -5,10 +5,12 @@ import 'package:flutter_ui_batch_6/ThiridDay.dart';
 import 'package:flutter_ui_batch_6/animation.dart';
 import 'package:flutter_ui_batch_6/eighth.dart';
 import 'package:flutter_ui_batch_6/eleventh.dart';
+import 'package:flutter_ui_batch_6/fifteen.dart';
 import 'package:flutter_ui_batch_6/fifthday.dart';
 import 'package:flutter_ui_batch_6/ninthScreen.dart';
 import 'package:flutter_ui_batch_6/secondday.dart';
 import 'package:flutter_ui_batch_6/seventh.dart';
+import 'package:flutter_ui_batch_6/sixteen.dart';
 import 'package:flutter_ui_batch_6/tenth.dart';
 import 'package:flutter_ui_batch_6/thrieen.dart';
 import 'package:flutter_ui_batch_6/tweleth.dart';
@@ -31,13 +33,15 @@ class FirstClass extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: ThriteenScreen(),
-      initialRoute: 'Animation',
+      initialRoute: 'lifecyclewidget',
       routes: {
         "/": (context) => const ThriteenScreen(),
         "firstscreen": (context) => FirstDay(),
         "secondscreen": (context) => SecondDay(),
         "thridscreen": (context) => ThridScreen(titledata: "add"),
         "Animation": (context) => FourteenSreen(),
+        "Bottomnavigation": (context) => FifteenScreen(),
+        "lifecyclewidget": (context) => SixteenScreen(name: "Atiq rehman"),
       },
       // TwelethScreen(),
       // EleventhScreen(),

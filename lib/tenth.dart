@@ -9,6 +9,11 @@ class TenthScreen extends StatelessWidget {
     return Scaffold(
       body: Column(
         children: [
+          ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "lifecyclewidget");
+              },
+              child: Text("Go to page 16")),
           Expanded(
             // height: 400,
             child: GridView.builder(
