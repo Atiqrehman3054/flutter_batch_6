@@ -16,6 +16,7 @@ import 'package:flutter_ui_batch_6/sixteen.dart';
 import 'package:flutter_ui_batch_6/tenth.dart';
 import 'package:flutter_ui_batch_6/thrieen.dart';
 import 'package:flutter_ui_batch_6/tweleth.dart';
+import 'package:flutter_ui_batch_6/twenty.dart';
 import 'package:get/get.dart';
 // import 'package:flutter_ui_batch_6/an';
 
@@ -36,8 +37,8 @@ class FirstClass extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      // home: ThriteenScreen(),
-      initialRoute: 'popups',
+      // home: ThriteenScreen(),2
+      initialRoute: 'Future',
       routes: {
         "/": (context) => const ThriteenScreen(),
         "firstscreen": (context) => FirstDay(),
@@ -49,6 +50,7 @@ class FirstClass extends StatelessWidget {
         "Tabbar": (context) => Seventeen(),
         "Drawer": (context) => EighteenScreen(),
         "popups": (context) => NinteenScreen(),
+        "Future": (context) => Async_await(),
       },
       // TwelethScreen(),
       // EleventhScreen(),

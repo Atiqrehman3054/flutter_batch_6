@@ -31,9 +31,10 @@ class NinteenScreen extends StatelessWidget {
         enableDrag: true,
         backgroundColor: Colors.transparent,
         context: context!,
+        
         builder: (BuildContext context) {
           return Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.red,
               borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20),
